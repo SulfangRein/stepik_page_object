@@ -12,8 +12,8 @@ class ProductPage(BasePage):
 
     def should_be_product_name_equals_name_in_success_message(self):
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
-        success_price = self.browser.find_element(*ProductPageLocators.SUCCESS_PRICE).text
-        assert product_name == success_price, "Product name not equals in success message"
+        success_alert = self.browser.find_element(*ProductPageLocators.SUCCESS_ALERT).text
+        assert product_name == success_alert, "Product name not equals in success message"
 
     def should_be_product_price_equals_basket_price(self):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
