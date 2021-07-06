@@ -1,5 +1,3 @@
-from time import sleep
-
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
